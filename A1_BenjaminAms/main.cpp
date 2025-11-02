@@ -273,7 +273,7 @@ void init(void) {
 		dontShow[i] = false;
     }  
 	SoundEngine->setSoundVolume(0.5f); // Set volume to 20% (adjust as needed)  
-	//SoundEngine->play2D("song.wav", true); // Added SND_LOOP to make the song loop 
+	SoundEngine->play2D("song.wav", true); // Added SND_LOOP to make the song loop 
 
 
 }
@@ -878,4 +878,5 @@ int main(int argc, char** argv) {
 
 	glutMainLoop();
 	return 0;
+
 }
