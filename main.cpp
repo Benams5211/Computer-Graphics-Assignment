@@ -327,7 +327,7 @@ void collision(void) {
 			d = sqrt(((bullet->getBX() - randPos[i].x * 1.5f) * (bullet->getBX() - randPos[i].x * 1.5f)) +
 				((bullet->getBY() - (0.9f + (i/5)+(headY)) ) * (bullet->getBY() - (0.9f + (i/5)+(headY)))) +
 				((bullet->getBZ() - randPos[i].z * 1.5f) * (bullet->getBZ() - randPos[i].z * 1.5f )));
-			if (d <= 0.08f + 0.4f && !killed[i]) {//do this if collision occurs AND the demon isnt dead
+			if (d <= 0.08f + 0.6f && !killed[i]) {//do this if collision occurs AND the demon isnt dead
 				killTime = 1; //set kill timer for red visual
 				killed[i] = true; //set the robot to dead
 				score += 10; //increase score
